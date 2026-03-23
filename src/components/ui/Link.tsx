@@ -1,8 +1,7 @@
 import NextLink from "next/link";
 import * as React from "react";
 
-export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  href: string;
+export interface LinkProps extends React.ComponentPropsWithoutRef<typeof NextLink> {
   variant?: "energetic" | "primary" | "default";
 }
 

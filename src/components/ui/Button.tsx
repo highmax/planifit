@@ -10,6 +10,7 @@ export function Button({
   variant = "primary",
   icon,
   children,
+  type = "button",
   ...props
 }: ButtonProps) {
   const baseStyles = "w-full rounded-lg flex items-center justify-center gap-2 transition-all";
@@ -19,7 +20,7 @@ export function Button({
   const styles = `${baseStyles} ${variant === "primary" ? primaryStyles : outlineStyles} ${className}`;
 
   return (
-    <button className={styles} {...props}>
+    <button className={styles} type={type} {...props}>
       {children}
       {icon}
     </button>

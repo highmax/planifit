@@ -24,7 +24,7 @@ export function Input({
   return (
     <div className="relative">
       {icon && (
-        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-outline">
+        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-outline" aria-hidden="true">
           {icon}
         </span>
       )}
@@ -38,6 +38,8 @@ export function Input({
           type="button"
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors"
+          aria-label={showPassword ? "Ocultar contraseña" : "Mostrar contraseña"}
+          aria-pressed={showPassword}
         >
           {showPassword ? <EyeOff size={20} strokeWidth={1.5} /> : <Eye size={20} strokeWidth={1.5} />}
         </button>

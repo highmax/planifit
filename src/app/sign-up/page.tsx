@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/Input";
 import { Label } from "@/components/ui/Label";
 import { Link } from "@/components/ui/Link";
 import { Heading } from "@/components/ui/Heading";
+import { AuthFooter } from "@/components/auth/AuthFooter";
 
 export default function SignUpPage() {
   return (
@@ -26,9 +27,12 @@ export default function SignUpPage() {
             <form className="space-y-6">
               {/* Full Name Field */}
               <div className="space-y-2">
-                <Label>Nombre completo</Label>
+                <Label htmlFor="name">Nombre completo</Label>
                 <Input 
+                  id="name"
+                  name="name"
                   type="text" 
+                  autoComplete="name"
                   placeholder="Tu nombre" 
                   icon={<User size={20} strokeWidth={1.5} />} 
                 />
@@ -36,9 +40,12 @@ export default function SignUpPage() {
 
               {/* Email Field */}
               <div className="space-y-2">
-                <Label>Email</Label>
+                <Label htmlFor="email">Email</Label>
                 <Input 
+                  id="email"
+                  name="email"
                   type="email" 
+                  autoComplete="email"
                   placeholder="tu@email.com" 
                   icon={<Mail size={20} strokeWidth={1.5} />} 
                 />
@@ -46,9 +53,12 @@ export default function SignUpPage() {
 
               {/* Password Field */}
               <div className="space-y-2">
-                <Label>Contraseña</Label>
+                <Label htmlFor="password">Contraseña</Label>
                 <Input 
+                  id="password"
+                  name="password"
                   type="password" 
+                  autoComplete="new-password"
                   placeholder="••••••••" 
                   icon={<Lock size={20} strokeWidth={1.5} />} 
                 />
@@ -56,9 +66,12 @@ export default function SignUpPage() {
 
               {/* Confirm Password Field */}
               <div className="space-y-2">
-                <Label>Confirmar contraseña</Label>
+                <Label htmlFor="confirm-password">Confirmar contraseña</Label>
                 <Input 
+                  id="confirm-password"
+                  name="confirm-password"
                   type="password" 
+                  autoComplete="new-password"
                   placeholder="••••••••" 
                   icon={<Lock size={20} strokeWidth={1.5} />} 
                 />
@@ -103,22 +116,7 @@ export default function SignUpPage() {
       </main>
 
       {/* Footer Component */}
-      <footer className="flex flex-col items-center justify-center gap-4 w-full py-8 opacity-80 mt-auto">
-        <div className="flex gap-6">
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Terms of Service
-          </Link>
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Support
-          </Link>
-        </div>
-        <p className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-          © 2026 Planifit.
-        </p>
-      </footer>
+      <AuthFooter className="mt-auto" />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/Input";
 import { Label } from "@/components/ui/Label";
 import { Link } from "@/components/ui/Link";
 import { Heading } from "@/components/ui/Heading";
+import { AuthFooter } from "@/components/auth/AuthFooter";
 
 export default function LoginPage() {
   return (
@@ -25,9 +26,12 @@ export default function LoginPage() {
             <form className="space-y-6">
               {/* Email Field */}
               <div className="space-y-2">
-                <Label>Email</Label>
+                <Label htmlFor="email">Email</Label>
                 <Input 
+                  id="email"
+                  name="email"
                   type="email" 
+                  autoComplete="email"
                   placeholder="tu@email.com" 
                   icon={<Mail size={20} strokeWidth={1.5} />} 
                 />
@@ -86,22 +90,7 @@ export default function LoginPage() {
       </main>
 
       {/* Footer Component */}
-      <footer className="flex flex-col items-center justify-center gap-4 w-full py-8 opacity-80">
-        <div className="flex gap-6">
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Terms of Service
-          </Link>
-          <Link href="#" className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-            Support
-          </Link>
-        </div>
-        <p className="font-['Inter'] text-[10px] sm:text-xs uppercase tracking-widest text-slate-500">
-          © 2026 Planifit.
-        </p>
-      </footer>
+      <AuthFooter />
     </div>
   );
 }
