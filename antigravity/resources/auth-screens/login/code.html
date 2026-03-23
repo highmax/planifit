@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planifit - Iniciar Sesión</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#dae2fd",
+              "tertiary-container": "#fea518",
+              "on-error": "#690005",
+              "primary-fixed-dim": "#91db2a",
+              "on-tertiary-container": "#684000",
+              "on-secondary": "#002e6a",
+              "on-secondary-fixed-variant": "#004395",
+              "on-secondary-container": "#e6ecff",
+              "surface-container-lowest": "#060e20",
+              "secondary-container": "#0566d9",
+              "on-background": "#dae2fd",
+              "tertiary-fixed": "#ffddb8",
+              "primary": "#9ee939",
+              "surface-tint": "#91db2a",
+              "inverse-surface": "#dae2fd",
+              "surface-container-highest": "#2d3449",
+              "surface-bright": "#31394d",
+              "background": "#0b1326",
+              "on-primary-fixed": "#102000",
+              "surface-dim": "#0b1326",
+              "tertiary-fixed-dim": "#ffb95f",
+              "on-primary-container": "#315200",
+              "surface-container": "#171f33",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#304f00",
+              "primary-fixed": "#acf847",
+              "on-tertiary": "#472a00",
+              "secondary-fixed-dim": "#adc6ff",
+              "inverse-primary": "#416900",
+              "secondary": "#adc6ff",
+              "on-primary": "#1f3700",
+              "inverse-on-surface": "#283044",
+              "error-container": "#93000a",
+              "surface-container-low": "#131b2e",
+              "tertiary": "#ffcb8d",
+              "outline": "#8b947d",
+              "outline-variant": "#424936",
+              "on-tertiary-fixed": "#2a1700",
+              "on-secondary-fixed": "#001a42",
+              "secondary-fixed": "#d8e2ff",
+              "error": "#ffb4ab",
+              "surface-container-high": "#222a3d",
+              "on-tertiary-fixed-variant": "#653e00",
+              "surface-variant": "#2d3449",
+              "on-surface-variant": "#c1cab0",
+              "primary-container": "#84cc16",
+              "surface": "#0b1326",
+              "energetic-blue": "#3B82F6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .geometric-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(145, 219, 42, 0.05) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col geometric-bg">
+<!-- TopAppBar Suppressed per Destination Rule (Transactional) -->
+<main class="flex-grow flex items-center justify-center p-6">
+<div class="w-full max-w-[420px] space-y-8">
+<!-- Logo Section -->
+<div class="text-center">
+<h1 class="font-headline text-4xl font-black text-primary tracking-tighter">PLANIFIT</h1>
+<p class="mt-4 font-headline text-2xl font-bold text-on-surface tracking-tight">Inicia sesión en tu cuenta</p>
+</div>
+<!-- Login Card -->
+<div class="bg-surface-container-high p-8 rounded-xl shadow-2xl border border-outline-variant/10">
+<form class="space-y-6">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-lg py-3 pl-10 pr-4 text-on-surface placeholder-outline focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="tu@email.com" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<label class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Contraseña</label>
+<a class="text-[11px] font-semibold text-energetic-blue hover:underline transition-all" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-lg py-3 pl-10 pr-12 text-on-surface placeholder-outline focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary-container text-on-primary font-bold py-4 rounded-lg flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary-container/10" type="submit">
+                        Iniciar sesión
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+<!-- Separator -->
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/20"></div>
+</div>
+<div class="relative flex justify-center text-xs uppercase tracking-widest font-label">
+<span class="bg-surface-container-high px-4 text-on-surface-variant">o continúa con</span>
+</div>
+</div>
+<!-- Social Login -->
+<button class="w-full bg-transparent border border-outline-variant/30 text-on-surface py-3 rounded-lg font-semibold flex items-center justify-center gap-3 hover:bg-surface-bright transition-colors">
+<img alt="" class="w-5 h-5" data-alt="Google logo icon for social login" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVCLJKxD-rLFqzfQICWJh1yhPMSATgz4Yp8nvvyN7qN0VjayqiOsj9X156xOmSY54pWqN-QuYyGS-GMVtHSab5x-QVut_hicRNVRkAis5f3ar-zjWhxU1No6QnOeUn5w1CYx8s8X5J_Dt1wrHpz0UCDnCQ6PrtUJ0jNiyS-K72S4pBJUFtSiquhsN44lek6IbMgkBbymcGlnD7wdIm7cSCeUH3ohmIhCfW2aW98ipGwM-zikKC3_I2I4UyxA-P1PJXaUewH7oTHuY"/>
+                    Continuar con Google
+                </button>
+</div>
+<!-- Footer Link -->
+<p class="text-center text-on-surface-variant font-medium">
+                ¿No tienes cuenta? 
+                <a class="text-primary font-bold hover:underline ml-1" href="#">Regístrate</a>
+</p>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="flex flex-col items-center justify-center gap-4 w-full py-8 opacity-80">
+<div class="flex gap-6">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-white transition-opacity" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-white transition-opacity" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-white transition-opacity" href="#">Support</a>
+</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">© 2024 Planifit. Kinetic Precision Engineering.</p>
+</footer>
+</body></html>
