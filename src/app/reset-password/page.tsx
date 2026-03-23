@@ -80,7 +80,7 @@ export default function ResetPasswordPage() {
 
           {/* Footer Link */}
           <div className="flex justify-center text-on-surface-variant">
-            <Link href="/login" className="flex items-center gap-2 hover:text-on-surface transition-colors font-medium">
+            <Link href="/login" className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors font-medium">
               <ArrowLeft size={18} strokeWidth={1.5} />
               Volver al inicio de sesión
             </Link>
