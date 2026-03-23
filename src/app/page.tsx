@@ -22,6 +22,7 @@ export default function Home() {
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 glass-nav">
         <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+          {" "}
           <div className="text-2xl font-black text-primary tracking-tighter font-headline">
             Planifit
           </div>
@@ -63,7 +64,7 @@ export default function Home() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20 text-primary text-xs font-bold uppercase tracking-widest">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Version de prueba ya disponible!
+              ¡Versión de prueba ya disponible!
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] font-headline">
@@ -314,27 +315,15 @@ export default function Home() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <Check
-                    size={20}
-                    strokeWidth={1.5}
-                    className="text-primary"
-                  />
+                  <Check size={20} strokeWidth={1.5} className="text-primary" />
                   Hasta 5 clientes
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <Check
-                    size={20}
-                    strokeWidth={1.5}
-                    className="text-primary"
-                  />
+                  <Check size={20} strokeWidth={1.5} className="text-primary" />
                   10 programas activos
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
-                  <Check
-                    size={20}
-                    strokeWidth={1.5}
-                    className="text-primary"
-                  />
+                  <Check size={20} strokeWidth={1.5} className="text-primary" />
                   30 ejercicios personalizados
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant/50">
@@ -450,14 +439,14 @@ export default function Home() {
           <div className="flex gap-6">
             <a
               className="text-on-surface-variant/50 hover:text-primary transition-colors"
-              href="#"
+              href="https://www.facebook.com/planifitapp"
               aria-label="Facebook"
             >
               <Facebook size={24} strokeWidth={1.5} />
             </a>
             <a
               className="text-on-surface-variant/50 hover:text-primary transition-colors"
-              href="#"
+              href="https://www.instagram.com/planifitapp"
               aria-label="Instagram"
             >
               <Instagram size={24} strokeWidth={1.5} />
