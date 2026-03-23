@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planifit | Crea programas de entrenamiento profesionales</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#91db2a",
+                        "on-background": "#dae2fd",
+                        "inverse-primary": "#416900",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "inverse-on-surface": "#283044",
+                        "primary": "#9ee939",
+                        "tertiary": "#ffcb8d",
+                        "surface-container-high": "#222a3d",
+                        "surface-container": "#171f33",
+                        "outline": "#8b947d",
+                        "tertiary-container": "#fea518",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "primary-fixed-dim": "#91db2a",
+                        "primary-container": "#84cc16",
+                        "surface-dim": "#0b1326",
+                        "surface-bright": "#31394d",
+                        "on-tertiary-container": "#684000",
+                        "primary-fixed": "#acf847",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#131b2e",
+                        "on-secondary-fixed": "#001a42",
+                        "on-error-container": "#ffdad6",
+                        "background": "#0b1326",
+                        "on-surface-variant": "#c1cab0",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-surface": "#dae2fd",
+                        "surface-container-highest": "#2d3449",
+                        "surface-variant": "#2d3449",
+                        "outline-variant": "#424936",
+                        "on-error": "#690005",
+                        "on-primary-container": "#315200",
+                        "secondary": "#adc6ff",
+                        "on-secondary": "#002e6a",
+                        "on-tertiary": "#472a00",
+                        "secondary-container": "#0566d9",
+                        "on-secondary-container": "#e6ecff",
+                        "tertiary-fixed": "#ffddb8",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#102000",
+                        "surface-container-lowest": "#060e20",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface": "#0b1326",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-primary": "#1f3700",
+                        "on-primary-fixed-variant": "#304f00",
+                        "secondary-fixed": "#d8e2ff",
+                        "inverse-surface": "#dae2fd"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(11, 19, 38, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-lime-400 tracking-tighter brand-font">Planifit</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-white transition-colors font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#features">Features</a>
+<a class="text-slate-300 hover:text-white transition-colors font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#how-it-works">How It Works</a>
+<a class="text-slate-300 hover:text-white transition-colors font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#pricing">Pricing</a>
+<a class="text-slate-300 hover:text-white transition-colors font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Coaches</a>
+</div>
+<button class="bg-primary-container text-on-primary font-bold px-6 py-2.5 rounded-xl hover:scale-95 transition-all duration-300 active:scale-90">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden min-h-screen flex items-center">
+<!-- Geometric Background Decor -->
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary-container rounded-full blur-[120px] -mr-96 -mt-96"></div>
+<div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] -ml-72 -mb-72"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Versión 2.0 ya disponible
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] text-on-surface">
+                    Crea programas de entrenamiento <span class="text-primary">profesionales</span> en minutos
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    La herramienta que los entrenadores necesitan para diseñar, organizar y entregar rutinas personalizadas a sus clientes.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary-container text-on-primary font-extrabold text-lg px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(132,204,22,0.3)] hover:shadow-[0_0_30px_rgba(132,204,22,0.5)] transition-all">
+                        Empezar gratis
+                    </button>
+<button class="border-2 border-outline-variant/30 text-on-surface font-bold text-lg px-8 py-4 rounded-xl hover:bg-surface-bright transition-all inline-flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Ver demo
+                    </button>
+</div>
+</div>
+<div class="relative">
+<div class="bg-surface-container-highest rounded-[2.5rem] p-4 shadow-2xl border border-outline-variant/20">
+<img alt="Dashboard Preview" class="rounded-[1.75rem] w-full object-cover aspect-[4/5] md:aspect-[16/10]" data-alt="Modern fitness app interface on a mobile device showing training exercises" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRqRPmfiltOKAMnuKHNDHmVFNWMHZ58alFFwt7Cjn-8FMxk7xbzRELSOIiemjwdz6hyUpmBm6G-TbJfvAX6XySus7UR6THa6ZpqzS3qCH2bs1Hsy7AvFMnHNmC38zzfjvITgKp2no0Vfwn7MVRDMwDncfqATCDgIOW2ct99YiR9saQ2hG5NhkXPmzlLosh9jM_9n5YzC67sTCL922ru4tM_sHvHHyFoaTCR8xJy0ZNNON_npK5sBLBTKzFO7vyaO4SPskzZpFev0k"/>
+</div>
+<!-- Floating Card UI Element -->
+<div class="absolute -bottom-6 -left-6 md:-left-12 bg-surface-container-high p-6 rounded-2xl border border-outline-variant/30 shadow-2xl hidden md:block max-w-[240px]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest">Progreso Total</p>
+<p class="text-xl font-black text-on-surface">+24%</p>
+</div>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 bg-surface-container-low" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Cómo funciona</h2>
+<div class="h-1.5 w-24 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="group p-8 rounded-3xl bg-surface-container-high transition-transform duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-2xl bg-surface-bright flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">person_add</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Agrega tus clientes</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Gestiona tu base de datos de atletas de forma centralizada. Todo en un solo lugar.
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="group p-8 rounded-3xl bg-surface-container-high transition-transform duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-2xl bg-surface-bright flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">calendar_add_on</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Crea el programa</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Diseña rutinas personalizadas arrastrando ejercicios de nuestra base de datos inteligente.
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="group p-8 rounded-3xl bg-surface-container-high transition-transform duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-2xl bg-surface-bright flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">picture_as_pdf</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Exporta y envía</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Genera PDFs de alta calidad con tu propia marca y envíalos directamente a tus clientes.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section (Bento Grid Style) -->
+<section class="py-24 bg-surface" id="features">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">Herramientas de alto rendimiento</h2>
+<p class="text-on-surface-variant text-lg">Todo lo que necesitas para escalar tu negocio de entrenamiento personal.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-8 p-10 rounded-[2rem] bg-surface-container-high border border-outline-variant/10 overflow-hidden relative group">
+<div class="relative z-10 max-w-md">
+<h3 class="text-3xl font-bold mb-4 text-primary">Biblioteca de ejercicios</h3>
+<p class="text-on-surface-variant text-lg mb-6">Crea y reutiliza ejercicios con enlaces a video. No pierdas tiempo explicando la técnica una y otra vez.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary" data-weight="fill">check_circle</span>
+                                Videos integrados
+                            </li>
+<li class="flex items-center gap-3 text-sm font-semibold">
+<span class="material-symbols-outlined text-primary" data-weight="fill">check_circle</span>
+                                Etiquetas personalizadas
+                            </li>
+</ul>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-4 p-10 rounded-[2rem] bg-secondary-container/10 border border-secondary/20 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">layers</span>
+<h3 class="text-2xl font-bold mb-4">Programas estructurados</h3>
+<p class="text-on-surface-variant">Organiza por días con series, repeticiones, intensidad y descansos de forma granular.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-4 p-10 rounded-[2rem] bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-6">branding_watermark</span>
+<h3 class="text-2xl font-bold mb-4">PDF profesional</h3>
+<p class="text-on-surface-variant">Exporta con tu propio logo y colores. Mantén una imagen corporativa de élite.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-8 p-10 rounded-[2rem] bg-surface-bright/20 border border-outline-variant/10 flex items-center justify-between gap-8 flex-col md:flex-row">
+<div class="flex-1">
+<h3 class="text-3xl font-bold mb-4">Desde cualquier dispositivo</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">Accede a tus planes desde el móvil mientras estás en el gimnasio, o desde tu escritorio para sesiones de planificación profunda.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-6xl text-slate-500">smartphone</span>
+<span class="material-symbols-outlined text-6xl text-slate-500">laptop</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-24 bg-surface-container-lowest" id="pricing">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Planes para cada etapa</h2>
+<p class="text-on-surface-variant">Empieza gratis y escala a medida que crece tu cartera de clientes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- Free Plan -->
+<div class="p-10 rounded-[2.5rem] bg-surface-container flex flex-col h-full border border-outline-variant/5">
+<div class="mb-8">
+<h3 class="text-xl font-bold text-on-surface mb-2">Plan Free</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-black">$0</span>
+<span class="text-on-surface-variant font-medium">/mes</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">check</span>
+                            Hasta 5 clientes
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">check</span>
+                            10 programas activos
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">check</span>
+                            30 ejercicios personalizados
+                        </li>
+<li class="flex items-center gap-3 text-slate-500">
+<span class="material-symbols-outlined">close</span>
+<span class="line-through">PDF sin marca de agua</span>
+</li>
+</ul>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-outline-variant/30 hover:bg-surface-bright transition-all">
+                        Empezar gratis
+                    </button>
+</div>
+<!-- Pro Plan -->
+<div class="p-10 rounded-[2.5rem] bg-surface-container-high relative border-2 border-primary overflow-hidden flex flex-col h-full">
+<div class="absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-black uppercase px-6 py-1 tracking-widest rotate-45 translate-x-10 translate-y-6">
+                        Popular
+                    </div>
+<div class="mb-8">
+<h3 class="text-xl font-bold text-primary mb-2">Plan Pro</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-black">$9.99</span>
+<span class="text-on-surface-variant font-medium">/mes</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 font-bold">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Clientes ilimitados
+                        </li>
+<li class="flex items-center gap-3 font-bold">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Programas ilimitados
+                        </li>
+<li class="flex items-center gap-3 font-bold">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Ejercicios ilimitados
+                        </li>
+<li class="flex items-center gap-3 font-bold">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            PDF con tu propio logo
+                        </li>
+<li class="flex items-center gap-3 font-bold">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Envío por email directo
+                        </li>
+</ul>
+<button class="w-full py-4 px-6 rounded-xl font-black bg-primary text-on-primary hover:shadow-[0_0_20px_rgba(132,204,22,0.4)] transition-all">
+                        Comenzar prueba gratuita
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-2xl font-black text-lime-400 tracking-tighter brand-font">Planifit</div>
+<p class="font-['Inter'] text-sm text-slate-400 text-center md:text-left">
+                    Potenciando a los entrenadores del futuro.
+                </p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-sm text-slate-400 hover:text-white transition-colors" href="#">Product</a>
+<a class="font-['Inter'] text-sm text-slate-400 hover:text-white transition-colors" href="#">Prices</a>
+<a class="font-['Inter'] text-sm text-slate-400 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div class="px-8 pb-8 max-w-7xl mx-auto text-center">
+<p class="font-['Inter'] text-xs text-slate-500">
+                © 2024 Planifit Precision Training. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
