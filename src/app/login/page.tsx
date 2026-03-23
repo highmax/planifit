@@ -40,13 +40,16 @@ export default function LoginPage() {
               {/* Password Field */}
               <div className="space-y-2">
                 <div className="flex justify-between items-end">
-                  <Label>Contraseña</Label>
+                  <Label htmlFor="password" >Contraseña</Label>
                   <Link href="/forgot-password" variant="energetic">
                     ¿Olvidaste tu contraseña?
                   </Link>
                 </div>
                 <Input 
+                  id="password"
+                  name="password"
                   type="password" 
+                  autoComplete="current-password"
                   placeholder="••••••••" 
                   icon={<Lock size={20} strokeWidth={1.5} />} 
                 />
