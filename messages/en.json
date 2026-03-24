@@ -1,0 +1,138 @@
+{
+  "Index": {
+    "title": "Planifit | Create professional training programs",
+    "description": "The tool trainers need to design, organize, and deliver personalized routines to their clients."
+  },
+  "Login": {
+    "title": "Log in to your account",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "forgotPassword": "Forgot your password?",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Log in",
+    "orContinueWith": "or continue with",
+    "continueWithGoogle": "Continue with Google",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  },
+  "ResetPassword": {
+    "title": "Create your new password",
+    "description": "Make sure it is secure and hard to guess.",
+    "newPasswordLabel": "NEW PASSWORD",
+    "newPasswordPlaceholder": "••••••••",
+    "confirmPasswordLabel": "CONFIRM PASSWORD",
+    "confirmPasswordPlaceholder": "••••••••",
+    "requirement1": "8+ characters",
+    "requirement2": "1 symbol",
+    "submit": "Reset password",
+    "backToLogin": "Back to login"
+  },
+  "SignUp": {
+    "title": "Create your account",
+    "nameLabel": "Full name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@email.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordLabel": "Confirm password",
+    "confirmPasswordPlaceholder": "••••••••",
+    "submit": "Create account",
+    "orContinueWith": "or continue with",
+    "continueWithGoogle": "Continue with Google",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log in"
+  },
+  "ForgotPassword": {
+    "title": "Recover password",
+    "description": "Enter your email and we will send you the instructions to regain access.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@email.com",
+    "submit": "Send instructions",
+    "rememberedPassword": "Remembered your password?",
+    "backToLogin": "Back to login"
+  },
+  "Landing": {
+    "nav": {
+      "howItWorks": "How it works",
+      "features": "Features",
+      "pricing": "Pricing",
+      "start": "Get started"
+    },
+    "hero": {
+      "badge": "Free trial available now!",
+      "title1": "Create ",
+      "title2": "professional",
+      "title3": " training programs in minutes",
+      "subtitle": "The tool trainers need to design, organize, and deliver personalized routines to their clients.",
+      "startFree": "Start for free",
+      "watchDemo": "Watch demo",
+      "totalProgress": "Total Progress"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1Title": "Add your clients",
+      "step1Desc": "Manage your athlete database centrally. All in one place.",
+      "step2Title": "Create the program",
+      "step2Desc": "Design personalized routines by dragging exercises from our smart database.",
+      "step3Title": "Export and send",
+      "step3Desc": "Generate high-quality PDFs with your own branding and send them directly to your clients."
+    },
+    "features": {
+      "title": "High performance tools",
+      "subtitle": "Everything you need to scale your personal training business.",
+      "feat1Title": "Exercise library",
+      "feat1Desc": "Create and reuse exercises with video links. Don't waste time explaining technique over and over again.",
+      "feat1Check1": "Integrated videos",
+      "feat1Check2": "Custom tags",
+      "feat2Title": "Structured programs",
+      "feat2Desc": "Organize by days with granular sets, reps, intensity, and active rest periods.",
+      "feat3Title": "Professional PDF",
+      "feat3Desc": "Export with your own logo and colors. Maintain an elite corporate image.",
+      "feat4Title": "From any device",
+      "feat4Desc": "Access your plans from your phone while at the gym, or from your desk for deep planning sessions."
+    },
+    "pricing": {
+      "title": "Plans for every stage",
+      "subtitle": "Start for free and scale as your client base grows.",
+      "free": {
+        "title": "Free Plan",
+        "month": "/mo",
+        "feat1": "Up to 5 clients",
+        "feat2": "10 active programs",
+        "feat3": "30 custom exercises",
+        "feat4": "Watermark-free PDF",
+        "btn": "Start for free"
+      },
+      "pro": {
+        "badge": "Most popular",
+        "title": "Pro Plan",
+        "month": "/mo",
+        "feat1": "Unlimited clients",
+        "feat2": "Unlimited programs",
+        "feat3": "Unlimited exercises",
+        "feat4": "PDF with your own logo",
+        "feat5": "Direct email delivery",
+        "btn": "Start free trial"
+      }
+    },
+    "footer": {
+      "slogan": "Empowering the trainers of the future.",
+      "howItWorks": "How it works",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "rights": "© 2026 Planifit. All rights reserved."
+    }
+  },
+  "AuthFooter": {
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "support": "Support",
+    "rights": "© {year} Planifit."
+  },
+  "Input": {
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  }
+}

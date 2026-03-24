@@ -45,6 +45,15 @@ To run the tests, you can use the following commands:
 
 This project also uses [Husky](https://typicode.github.io/husky/) and `lint-staged` to run linting and related tests automatically on pre-commit.
 
+## Internationalization (i18n)
+
+This project uses [`next-intl`](https://next-intl-docs.vercel.app/) for internationalization.
+The application supports both English (`en`) and Spanish (`es`), with Spanish set as the default language.
+
+- **Language Detection**: The preferred language is automatically detected via the `Accept-Language` HTTP header, eliminating the need for locale prefixes in the URL.
+- **Translation Files**: Translations are stored as JSON files inside the `messages/` directory (e.g., `messages/en.json`, `messages/es.json`). 
+- **Usage**: Use the `useTranslations` hook from `next-intl` in your Server or Client Components to access translated strings.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

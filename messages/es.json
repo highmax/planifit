@@ -1,0 +1,138 @@
+{
+  "Index": {
+    "title": "Planifit | Crea programas de entrenamiento profesionales",
+    "description": "La herramienta que los entrenadores necesitan para diseñar, organizar y entregar rutinas personalizadas a sus clientes."
+  },
+  "Login": {
+    "title": "Inicia sesión en tu cuenta",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "passwordLabel": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Iniciar sesión",
+    "orContinueWith": "o continúa con",
+    "continueWithGoogle": "Continuar con Google",
+    "noAccount": "¿No tienes cuenta?",
+    "signUp": "Regístrate"
+  },
+  "ResetPassword": {
+    "title": "Crea tu nueva contraseña",
+    "description": "Asegúrate de que sea segura y difícil de adivinar.",
+    "newPasswordLabel": "NUEVA CONTRASEÑA",
+    "newPasswordPlaceholder": "••••••••",
+    "confirmPasswordLabel": "CONFIRMAR CONTRASEÑA",
+    "confirmPasswordPlaceholder": "••••••••",
+    "requirement1": "8+ caracteres",
+    "requirement2": "1 símbolo",
+    "submit": "Restablecer contraseña",
+    "backToLogin": "Volver al inicio de sesión"
+  },
+  "SignUp": {
+    "title": "Crea tu cuenta",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordLabel": "Confirmar contraseña",
+    "confirmPasswordPlaceholder": "••••••••",
+    "submit": "Crear cuenta",
+    "orContinueWith": "o continúa con",
+    "continueWithGoogle": "Continuar con Google",
+    "alreadyHaveAccount": "¿Ya tienes cuenta?",
+    "login": "Inicia sesión"
+  },
+  "ForgotPassword": {
+    "title": "Recupera contraseña",
+    "description": "Introduce tu email y te enviaremos las instrucciones para restablecer tu acceso.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "submit": "Enviar instrucciones",
+    "rememberedPassword": "¿Recordaste tu contraseña?",
+    "backToLogin": "Volver al inicio de sesión"
+  },
+  "Landing": {
+    "nav": {
+      "howItWorks": "Cómo funciona",
+      "features": "Herramientas",
+      "pricing": "Precios",
+      "start": "Comenzar"
+    },
+    "hero": {
+      "badge": "¡Versión de prueba ya disponible!",
+      "title1": "Crea programas de entrenamiento ",
+      "title2": "profesionales",
+      "title3": " en minutos",
+      "subtitle": "La herramienta que los entrenadores necesitan para diseñar, organizar y entregar rutinas personalizadas a sus clientes.",
+      "startFree": "Empezar gratis",
+      "watchDemo": "Ver demo",
+      "totalProgress": "Progreso Total"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1Title": "Agrega tus clientes",
+      "step1Desc": "Gestiona tu base de datos de atletas de forma centralizada. Todo en un solo lugar.",
+      "step2Title": "Crea el programa",
+      "step2Desc": "Diseña rutinas personalizadas arrastrando ejercicios de nuestra base de datos inteligente.",
+      "step3Title": "Exporta y envía",
+      "step3Desc": "Genera PDFs de alta calidad con tu propia marca y envíalos directamente a tus clientes."
+    },
+    "features": {
+      "title": "Herramientas de alto rendimiento",
+      "subtitle": "Todo lo que necesitas para escalar tu negocio de entrenamiento personal.",
+      "feat1Title": "Biblioteca de ejercicios",
+      "feat1Desc": "Crea y reutiliza ejercicios con enlaces a video. No pierdas tiempo explicando la técnica una y otra vez.",
+      "feat1Check1": "Videos integrados",
+      "feat1Check2": "Etiquetas personalizadas",
+      "feat2Title": "Programas estructurados",
+      "feat2Desc": "Organiza por días con series, repeticiones, intensidad y descansos de forma granular.",
+      "feat3Title": "PDF profesional",
+      "feat3Desc": "Exporta con tu propio logo y colores. Mantén una imagen corporativa de élite.",
+      "feat4Title": "Desde cualquier dispositivo",
+      "feat4Desc": "Accede a tus planes desde el móvil mientras estás en el gimnasio, o desde tu escritorio para sesiones de planificación profunda."
+    },
+    "pricing": {
+      "title": "Planes para cada etapa",
+      "subtitle": "Empieza gratis y escala a medida que crece tu cartera de clientes.",
+      "free": {
+        "title": "Plan Gratuito",
+        "month": "/mes",
+        "feat1": "Hasta 5 clientes",
+        "feat2": "10 programas activos",
+        "feat3": "30 ejercicios personalizados",
+        "feat4": "PDF sin marca de agua",
+        "btn": "Empezar gratis"
+      },
+      "pro": {
+        "badge": "Más popular",
+        "title": "Plan Pro",
+        "month": "/mes",
+        "feat1": "Clientes ilimitados",
+        "feat2": "Programas ilimitados",
+        "feat3": "Ejercicios ilimitados",
+        "feat4": "PDF con tu propio logo",
+        "feat5": "Envío por email directo",
+        "btn": "Comenzar prueba gratuita"
+      }
+    },
+    "footer": {
+      "slogan": "Potenciando a los entrenadores del futuro.",
+      "howItWorks": "Cómo funciona",
+      "pricing": "Precios",
+      "contact": "Contacto",
+      "rights": "© 2026 Planifit. Todos los derechos reservados."
+    }
+  },
+  "AuthFooter": {
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "support": "Soporte",
+    "rights": "© {year} Planifit."
+  },
+  "Input": {
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña"
+  }
+}
