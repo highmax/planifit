@@ -62,9 +62,7 @@
     },
     "hero": {
       "badge": "¡Versión de prueba ya disponible!",
-      "title1": "Crea programas de entrenamiento ",
-      "title2": "profesionales",
-      "title3": " en minutos",
+      "title": "Crea programas de entrenamiento <strong>profesionales</strong> en minutos",
       "subtitle": "La herramienta que los entrenadores necesitan para diseñar, organizar y entregar rutinas personalizadas a sus clientes.",
       "startFree": "Empezar gratis",
       "watchDemo": "Ver demo",
@@ -122,7 +120,7 @@
       "howItWorks": "Cómo funciona",
       "pricing": "Precios",
       "contact": "Contacto",
-      "rights": "© 2026 Planifit. Todos los derechos reservados."
+      "rights": "© {year} Planifit. Todos los derechos reservados."
     }
   },
   "AuthFooter": {

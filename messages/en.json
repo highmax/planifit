@@ -62,9 +62,7 @@
     },
     "hero": {
       "badge": "Free trial available now!",
-      "title1": "Create ",
-      "title2": "professional",
-      "title3": " training programs in minutes",
+      "title": "Create <strong>professional</strong> training programs in minutes",
       "subtitle": "The tool trainers need to design, organize, and deliver personalized routines to their clients.",
       "startFree": "Start for free",
       "watchDemo": "Watch demo",
@@ -122,7 +120,7 @@
       "howItWorks": "How it works",
       "pricing": "Pricing",
       "contact": "Contact",
-      "rights": "© 2026 Planifit. All rights reserved."
+      "rights": "© {year} Planifit. All rights reserved."
     }
   },
   "AuthFooter": {

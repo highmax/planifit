@@ -71,8 +71,9 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] font-headline">
-              {t('hero.title1')}
-              <span className="text-primary">{t('hero.title2')}</span>{t('hero.title3')}
+              {t.rich('hero.title', {
+                strong: (chunks) => <span className="text-primary">{chunks}</span>,
+              })}
             </h1>
 
             <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body">
@@ -448,7 +449,7 @@ export default function Home() {
         </div>
         <div className="px-8 pb-8 max-w-7xl mx-auto text-center">
           <p className="text-xs text-on-surface-variant/50">
-            {t('footer.rights')}
+            {t('footer.rights', { year: new Date().getFullYear() })}
           </p>
         </div>
       </footer>
