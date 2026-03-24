@@ -16,7 +16,7 @@ export function ForgotPasswordForm() {
       email: '',
     },
     validators: {
-      onChange: getForgotPasswordSchema(t)
+      onSubmit: getForgotPasswordSchema(t)
     },
     onSubmit: async ({ value }) => {
       console.log(value);
@@ -48,7 +48,7 @@ export function ForgotPasswordForm() {
                 onChange={(e) => field.handleChange(e.target.value)}
                 onBlur={field.handleBlur}
               />
-              {field.state.meta.errors.length > 0 && (
+              {field.state.meta.isTouched && field.state.meta.errors.length > 0 && (
                 <p className="text-sm font-medium text-red-500 mt-1">
                   {field.state.meta.errors.map((err) => (err as { message?: string })?.message || String(err)).join(', ')}
                 </p>
