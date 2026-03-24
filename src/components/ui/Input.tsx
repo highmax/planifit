@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Eye, EyeOff } from "lucide-react";
+import {useTranslations} from "next-intl";
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ReactNode;
@@ -13,6 +14,7 @@ export function Input({
   icon,
   ...props
 }: InputProps) {
+  const t = useTranslations('Input');
   const [showPassword, setShowPassword] = React.useState(false);
   const isPassword = type === "password";
   const inputType = isPassword ? (showPassword ? "text" : "password") : type;
@@ -38,7 +40,7 @@ export function Input({
           type="button"
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors"
-          aria-label={showPassword ? "Ocultar contraseña" : "Mostrar contraseña"}
+          aria-label={showPassword ? t('hidePassword') : t('showPassword')}
           aria-pressed={showPassword}
         >
           {showPassword ? <EyeOff size={20} strokeWidth={1.5} /> : <Eye size={20} strokeWidth={1.5} />}

@@ -15,8 +15,11 @@ import {
   Facebook,
   Instagram,
 } from "lucide-react";
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Landing');
+
   return (
     <div className="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
       {/* Nav */}
@@ -31,23 +34,23 @@ export default function Home() {
               className="text-on-surface-variant hover:text-on-surface transition-colors font-bold font-headline tracking-tight"
               href="#how-it-works"
             >
-              Cómo funciona
+              {t('nav.howItWorks')}
             </a>
             <a
               className="text-on-surface-variant hover:text-on-surface transition-colors font-bold font-headline tracking-tight"
               href="#features"
             >
-              Herramientas
+              {t('nav.features')}
             </a>
             <a
               className="text-on-surface-variant hover:text-on-surface transition-colors font-bold font-headline tracking-tight"
               href="#pricing"
             >
-              Precios
+              {t('nav.pricing')}
             </a>
           </div>
           <button className="bg-primary-container text-on-primary font-bold px-6 py-2.5 rounded-xl hover:scale-95 transition-all duration-300 active:scale-90">
-            Comenzar
+            {t('nav.start')}
           </button>
         </div>
       </nav>
@@ -64,26 +67,26 @@ export default function Home() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20 text-primary text-xs font-bold uppercase tracking-widest">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              ¡Versión de prueba ya disponible!
+              {t('hero.badge')}
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] font-headline">
-              Crea programas de entrenamiento{" "}
-              <span className="text-primary">profesionales</span> en minutos
+              {t.rich('hero.title', {
+                strong: (chunks) => <span className="text-primary">{chunks}</span>,
+              })}
             </h1>
 
             <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body">
-              La herramienta que los entrenadores necesitan para diseñar,
-              organizar y entregar rutinas personalizadas a sus clientes.
+              {t('hero.subtitle')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button className="bg-primary-container text-on-primary font-extrabold text-lg px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(132,204,22,0.3)] hover:shadow-[0_0_30px_rgba(132,204,22,0.5)] transition-all">
-                Empezar gratis
+                {t('hero.startFree')}
               </button>
               <button className="border-2 border-outline-variant/30 text-on-surface font-bold text-lg px-8 py-4 rounded-xl hover:bg-surface-bright transition-all inline-flex items-center justify-center gap-2">
                 <PlayCircle size={24} strokeWidth={1.5} />
-                Ver demo
+                {t('hero.watchDemo')}
               </button>
             </div>
           </div>
@@ -108,7 +111,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest">
-                    Progreso Total
+                    {t('hero.totalProgress')}
                   </p>
                   <p className="text-xl font-black font-headline">+24%</p>
                 </div>
@@ -126,7 +129,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-headline">
-              Cómo funciona
+              {t('howItWorks.title')}
             </h2>
             <div className="h-1.5 w-24 bg-primary rounded-full" />
           </div>
@@ -137,11 +140,10 @@ export default function Home() {
                 <UserPlus size={36} strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-headline">
-                Agrega tus clientes
+                {t('howItWorks.step1Title')}
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Gestiona tu base de datos de atletas de forma centralizada. Todo
-                en un solo lugar.
+                {t('howItWorks.step1Desc')}
               </p>
             </div>
 
@@ -150,11 +152,10 @@ export default function Home() {
                 <CalendarPlus size={36} strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-headline">
-                Crea el programa
+                {t('howItWorks.step2Title')}
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Diseña rutinas personalizadas arrastrando ejercicios de nuestra
-                base de datos inteligente.
+                {t('howItWorks.step2Desc')}
               </p>
             </div>
 
@@ -163,11 +164,10 @@ export default function Home() {
                 <FileText size={36} strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-headline">
-                Exporta y envía
+                {t('howItWorks.step3Title')}
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Genera PDFs de alta calidad con tu propia marca y envíalos
-                directamente a tus clientes.
+                {t('howItWorks.step3Desc')}
               </p>
             </div>
           </div>
@@ -179,11 +179,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20 max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6 font-headline">
-              Herramientas de alto rendimiento
+              {t('features.title')}
             </h2>
             <p className="text-on-surface-variant text-lg">
-              Todo lo que necesitas para escalar tu negocio de entrenamiento
-              personal.
+              {t('features.subtitle')}
             </p>
           </div>
 
@@ -192,11 +191,10 @@ export default function Home() {
             <div className="md:col-span-8 p-10 rounded-[2rem] bg-surface-container-high border border-outline-variant/10 overflow-hidden relative group">
               <div className="relative z-10 max-w-md">
                 <h3 className="text-3xl font-bold mb-4 text-primary font-headline">
-                  Biblioteca de ejercicios
+                  {t('features.feat1Title')}
                 </h3>
                 <p className="text-on-surface-variant text-lg mb-6">
-                  Crea y reutiliza ejercicios con enlaces a video. No pierdas
-                  tiempo explicando la técnica una y otra vez.
+                  {t('features.feat1Desc')}
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-sm font-semibold">
@@ -205,7 +203,7 @@ export default function Home() {
                       strokeWidth={1.5}
                       className="text-primary"
                     />
-                    Videos integrados
+                    {t('features.feat1Check1')}
                   </li>
                   <li className="flex items-center gap-3 text-sm font-semibold">
                     <CheckCircle
@@ -213,7 +211,7 @@ export default function Home() {
                       strokeWidth={1.5}
                       className="text-primary"
                     />
-                    Etiquetas personalizadas
+                    {t('features.feat1Check2')}
                   </li>
                 </ul>
               </div>
@@ -231,11 +229,10 @@ export default function Home() {
                   className="text-secondary mb-6"
                 />
                 <h3 className="text-2xl font-bold mb-4 font-headline">
-                  Programas estructurados
+                  {t('features.feat2Title')}
                 </h3>
                 <p className="text-on-surface-variant">
-                  Organiza por días con series, repeticiones, intensidad y
-                  descansos de forma granular.
+                  {t('features.feat2Desc')}
                 </p>
               </div>
             </div>
@@ -249,11 +246,10 @@ export default function Home() {
                   className="text-primary mb-6"
                 />
                 <h3 className="text-2xl font-bold mb-4 font-headline">
-                  PDF profesional
+                  {t('features.feat3Title')}
                 </h3>
                 <p className="text-on-surface-variant">
-                  Exporta con tu propio logo y colores. Mantén una imagen
-                  corporativa de élite.
+                  {t('features.feat3Desc')}
                 </p>
               </div>
             </div>
@@ -262,12 +258,10 @@ export default function Home() {
             <div className="md:col-span-8 p-10 rounded-[2rem] bg-surface-bright/20 border border-outline-variant/10 flex items-center justify-between gap-8 flex-col md:flex-row">
               <div className="flex-1">
                 <h3 className="text-3xl font-bold mb-4 font-headline">
-                  Desde cualquier dispositivo
+                  {t('features.feat4Title')}
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed">
-                  Accede a tus planes desde el móvil mientras estás en el
-                  gimnasio, o desde tu escritorio para sesiones de planificación
-                  profunda.
+                  {t('features.feat4Desc')}
                 </p>
               </div>
               <div className="flex gap-4">
@@ -292,10 +286,10 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black mb-4 font-headline">
-              Planes para cada etapa
+              {t('pricing.title')}
             </h2>
             <p className="text-on-surface-variant">
-              Empieza gratis y escala a medida que crece tu cartera de clientes.
+              {t('pricing.subtitle')}
             </p>
           </div>
 
@@ -304,54 +298,54 @@ export default function Home() {
             <div className="p-10 rounded-[2.5rem] bg-surface-container flex flex-col h-full border border-outline-variant/5">
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-2 font-headline">
-                  Plan Gratuito
+                  {t('pricing.free.title')}
                 </h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-black font-headline">$0</span>
                   <span className="text-on-surface-variant font-medium">
-                    /mes
+                    {t('pricing.free.month')}
                   </span>
                 </div>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-on-surface-variant">
                   <Check size={20} strokeWidth={1.5} className="text-primary" />
-                  Hasta 5 clientes
+                  {t('pricing.free.feat1')}
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
                   <Check size={20} strokeWidth={1.5} className="text-primary" />
-                  10 programas activos
+                  {t('pricing.free.feat2')}
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant">
                   <Check size={20} strokeWidth={1.5} className="text-primary" />
-                  30 ejercicios personalizados
+                  {t('pricing.free.feat3')}
                 </li>
                 <li className="flex items-center gap-3 text-on-surface-variant/50">
                   <X size={20} strokeWidth={1.5} />
-                  <span className="line-through">PDF sin marca de agua</span>
+                  <span className="line-through">{t('pricing.free.feat4')}</span>
                 </li>
               </ul>
               <button className="w-full py-4 px-6 rounded-xl font-bold border-2 border-outline-variant/30 hover:bg-surface-bright transition-all">
-                Empezar gratis
+                {t('pricing.free.btn')}
               </button>
             </div>
 
             {/* Pro Plan */}
             <div className="p-10 rounded-[2.5rem] bg-surface-container-high relative border-2 border-primary flex flex-col h-full">
               <span className="absolute top-10 right-10 bg-primary text-on-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                Más popular
+                {t('pricing.pro.badge')}
               </span>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold text-primary mb-2 font-headline">
-                  Plan Pro
+                  {t('pricing.pro.title')}
                 </h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-black font-headline">
                     $9.99
                   </span>
                   <span className="text-on-surface-variant font-medium">
-                    /mes
+                    {t('pricing.pro.month')}
                   </span>
                 </div>
               </div>
@@ -362,7 +356,7 @@ export default function Home() {
                     strokeWidth={1.5}
                     className="text-primary fill-primary/20"
                   />
-                  Clientes ilimitados
+                  {t('pricing.pro.feat1')}
                 </li>
                 <li className="flex items-center gap-3 font-bold">
                   <CheckCircle
@@ -370,7 +364,7 @@ export default function Home() {
                     strokeWidth={1.5}
                     className="text-primary fill-primary/20"
                   />
-                  Programas ilimitados
+                  {t('pricing.pro.feat2')}
                 </li>
                 <li className="flex items-center gap-3 font-bold">
                   <CheckCircle
@@ -378,7 +372,7 @@ export default function Home() {
                     strokeWidth={1.5}
                     className="text-primary fill-primary/20"
                   />
-                  Ejercicios ilimitados
+                  {t('pricing.pro.feat3')}
                 </li>
                 <li className="flex items-center gap-3 font-bold">
                   <CheckCircle
@@ -386,7 +380,7 @@ export default function Home() {
                     strokeWidth={1.5}
                     className="text-primary fill-primary/20"
                   />
-                  PDF con tu propio logo
+                  {t('pricing.pro.feat4')}
                 </li>
                 <li className="flex items-center gap-3 font-bold">
                   <CheckCircle
@@ -394,11 +388,11 @@ export default function Home() {
                     strokeWidth={1.5}
                     className="text-primary fill-primary/20"
                   />
-                  Envío por email directo
+                  {t('pricing.pro.feat5')}
                 </li>
               </ul>
               <button className="w-full py-4 px-6 rounded-xl font-black bg-primary text-on-primary hover:shadow-[0_0_20px_rgba(132,204,22,0.4)] transition-all">
-                Comenzar prueba gratuita
+                {t('pricing.pro.btn')}
               </button>
             </div>
           </div>
@@ -413,7 +407,7 @@ export default function Home() {
               Planifit
             </div>
             <p className="text-sm text-on-surface-variant text-center md:text-left">
-              Potenciando a los entrenadores del futuro.
+              {t('footer.slogan')}
             </p>
           </div>
           <div className="flex gap-8">
@@ -421,19 +415,19 @@ export default function Home() {
               className="text-sm text-on-surface-variant hover:text-on-surface transition-colors"
               href="#how-it-works"
             >
-              Cómo funciona
+              {t('footer.howItWorks')}
             </a>
             <a
               className="text-sm text-on-surface-variant hover:text-on-surface transition-colors"
               href="#pricing"
             >
-              Precios
+              {t('footer.pricing')}
             </a>
             <a
               className="text-sm text-on-surface-variant hover:text-on-surface transition-colors"
               href="mailto:contact@planifit.com"
             >
-              Contacto
+              {t('footer.contact')}
             </a>
           </div>
           <div className="flex gap-6">
@@ -455,7 +449,7 @@ export default function Home() {
         </div>
         <div className="px-8 pb-8 max-w-7xl mx-auto text-center">
           <p className="text-xs text-on-surface-variant/50">
-            © 2026 Planifit. Todos los derechos reservados.
+            {t('footer.rights', { year: new Date().getFullYear() })}
           </p>
         </div>
       </footer>
