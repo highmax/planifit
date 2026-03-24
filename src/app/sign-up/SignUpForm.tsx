@@ -1,0 +1,160 @@
+"use client"
+
+import * as React from "react";
+import { useForm } from "@tanstack/react-form-nextjs";
+import { useTranslations } from 'next-intl';
+import { User, Mail, Lock, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import { getSignUpSchema } from "./validations";
+
+export function SignUpForm() {
+  const t = useTranslations('SignUp');
+  const form = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      password: '',
+      confirmPassword: '',
+    },
+    validators: {
+      onChange: getSignUpSchema(t)
+    },
+    onSubmit: async ({ value }) => {
+      console.log(value);
+    },
+  });
+
+  return (
+    <form className="space-y-6"
+      onSubmit={(e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        form.handleSubmit()
+      }}
+    >
+      {/* Full Name Field */}
+      <div className="space-y-2">
+        <form.Field name="name">
+          {(field) => (
+            <>
+              <Label htmlFor={field.name}>{t('nameLabel')}</Label>
+              <Input 
+                id={field.name}
+                name={field.name}
+                type="text" 
+                autoComplete="name"
+                placeholder={t('namePlaceholder')} 
+                icon={<User size={20} strokeWidth={1.5} />} 
+                value={field.state.value}
+                onChange={(e) => field.handleChange(e.target.value)}
+                onBlur={field.handleBlur}
+              />
+              {field.state.meta.errors.length > 0 && (
+                <p className="text-sm font-medium text-red-500 mt-1">
+                  {field.state.meta.errors.map((err) => (err as { message?: string })?.message || String(err)).join(', ')}
+                </p>
+              )}
+            </>
+          )}
+        </form.Field>
+      </div>
+
+      {/* Email Field */}
+      <div className="space-y-2">
+        <form.Field name="email">
+          {(field) => (
+            <>
+              <Label htmlFor={field.name}>{t('emailLabel')}</Label>
+              <Input 
+                id={field.name}
+                name={field.name}
+                type="email" 
+                autoComplete="email"
+                placeholder={t('emailPlaceholder')} 
+                icon={<Mail size={20} strokeWidth={1.5} />} 
+                value={field.state.value}
+                onChange={(e) => field.handleChange(e.target.value)}
+                onBlur={field.handleBlur}
+              />
+              {field.state.meta.errors.length > 0 && (
+                <p className="text-sm font-medium text-red-500 mt-1">
+                  {field.state.meta.errors.map((err) => (err as { message?: string })?.message || String(err)).join(', ')}
+                </p>
+              )}
+            </>
+          )}
+        </form.Field>
+      </div>
+
+      {/* Password Field */}
+      <div className="space-y-2">
+        <form.Field name="password">
+          {(field) => (
+            <>
+              <Label htmlFor={field.name}>{t('passwordLabel')}</Label>
+              <Input 
+                id={field.name}
+                name={field.name}
+                type="password" 
+                autoComplete="new-password"
+                placeholder={t('passwordPlaceholder')} 
+                icon={<Lock size={20} strokeWidth={1.5} />} 
+                value={field.state.value}
+                onChange={(e) => field.handleChange(e.target.value)}
+                onBlur={field.handleBlur}
+              />
+              {field.state.meta.errors.length > 0 && (
+                <p className="text-sm font-medium text-red-500 mt-1">
+                  {field.state.meta.errors.map((err) => (err as { message?: string })?.message || String(err)).join(', ')}
+                </p>
+              )}
+            </>
+          )}
+        </form.Field>
+      </div>
+
+      {/* Confirm Password Field */}
+      <div className="space-y-2">
+        <form.Field name="confirmPassword">
+          {(field) => (
+            <>
+              <Label htmlFor={field.name}>{t('confirmPasswordLabel')}</Label>
+              <Input 
+                id={field.name}
+                name={field.name}
+                type="password" 
+                autoComplete="new-password"
+                placeholder={t('confirmPasswordPlaceholder')} 
+                icon={<Lock size={20} strokeWidth={1.5} />} 
+                value={field.state.value}
+                onChange={(e) => field.handleChange(e.target.value)}
+                onBlur={field.handleBlur}
+              />
+              {field.state.meta.errors.length > 0 && (
+                <p className="text-sm font-medium text-red-500 mt-1">
+                  {field.state.meta.errors.map((err) => (err as { message?: string })?.message || String(err)).join(', ')}
+                </p>
+              )}
+            </>
+          )}
+        </form.Field>
+      </div>
+
+      {/* Submit Button */}
+      <form.Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
+        {([canSubmit, isSubmitting]) => (
+          <Button 
+            type="submit" 
+            variant="primary" 
+            disabled={!canSubmit || isSubmitting}
+            icon={isSubmitting ? undefined : <ArrowRight size={20} strokeWidth={1.5} />}
+          >
+            {isSubmitting ? '...' : t('submit')}
+          </Button>
+        )}
+      </form.Subscribe>
+    </form>
+  );
+}

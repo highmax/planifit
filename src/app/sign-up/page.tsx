@@ -1,10 +1,8 @@
 import * as React from "react";
 import {useTranslations} from "next-intl";
-import { User, Mail, Lock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Label } from "@/components/ui/Label";
 import { Link } from "@/components/ui/Link";
+import { SignUpForm } from "./SignUpForm";
 import { Heading } from "@/components/ui/Heading";
 import { AuthFooter } from "@/components/auth/AuthFooter";
 
@@ -27,64 +25,7 @@ export default function SignUpPage() {
             <p className="font-headline text-2xl font-bold text-on-surface tracking-tight mb-6">
               {t('title')}
             </p>
-            <form className="space-y-6">
-              {/* Full Name Field */}
-              <div className="space-y-2">
-                <Label htmlFor="name">{t('nameLabel')}</Label>
-                <Input 
-                  id="name"
-                  name="name"
-                  type="text" 
-                  autoComplete="name"
-                  placeholder={t('namePlaceholder')} 
-                  icon={<User size={20} strokeWidth={1.5} />} 
-                />
-              </div>
-
-              {/* Email Field */}
-              <div className="space-y-2">
-                <Label htmlFor="email">{t('emailLabel')}</Label>
-                <Input 
-                  id="email"
-                  name="email"
-                  type="email" 
-                  autoComplete="email"
-                  placeholder={t('emailPlaceholder')} 
-                  icon={<Mail size={20} strokeWidth={1.5} />} 
-                />
-              </div>
-
-              {/* Password Field */}
-              <div className="space-y-2">
-                <Label htmlFor="password">{t('passwordLabel')}</Label>
-                <Input 
-                  id="password"
-                  name="password"
-                  type="password" 
-                  autoComplete="new-password"
-                  placeholder={t('passwordPlaceholder')} 
-                  icon={<Lock size={20} strokeWidth={1.5} />} 
-                />
-              </div>
-
-              {/* Confirm Password Field */}
-              <div className="space-y-2">
-                <Label htmlFor="confirm-password">{t('confirmPasswordLabel')}</Label>
-                <Input 
-                  id="confirm-password"
-                  name="confirm-password"
-                  type="password" 
-                  autoComplete="new-password"
-                  placeholder={t('confirmPasswordPlaceholder')} 
-                  icon={<Lock size={20} strokeWidth={1.5} />} 
-                />
-              </div>
-
-              {/* Submit Button */}
-              <Button type="submit" variant="primary" icon={<ArrowRight size={20} strokeWidth={1.5} />}>
-                {t('submit')}
-              </Button>
-            </form>
+            <SignUpForm />
 
             {/* Separator */}
             <div className="relative my-8">

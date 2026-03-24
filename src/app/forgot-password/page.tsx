@@ -1,10 +1,7 @@
 import * as React from "react";
 import {useTranslations} from "next-intl";
-import { Mail, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Label } from "@/components/ui/Label";
 import { Link } from "@/components/ui/Link";
+import { ForgotPasswordForm } from "./ForgotPasswordForm";
 import { Heading } from "@/components/ui/Heading";
 import { AuthFooter } from "@/components/auth/AuthFooter";
 
@@ -31,25 +28,7 @@ export default function ForgotPasswordPage() {
               {t('description')}
             </p>
 
-            <form className="space-y-6">
-              {/* Email Field */}
-              <div className="space-y-2">
-                <Label htmlFor="email">{t('emailLabel')}</Label>
-                <Input 
-                  id="email"
-                  name="email"
-                  type="email" 
-                  autoComplete="email"
-                  placeholder={t('emailPlaceholder')} 
-                  icon={<Mail size={20} strokeWidth={1.5} />} 
-                />
-              </div>
-
-              {/* Submit Button */}
-              <Button type="submit" variant="primary" icon={<ArrowRight size={20} strokeWidth={1.5} />}>
-                {t('submit')}
-              </Button>
-            </form>
+            <ForgotPasswordForm />
           </div>
 
           {/* Footer Link */}

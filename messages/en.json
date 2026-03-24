@@ -44,7 +44,11 @@
     "orContinueWith": "or continue with",
     "continueWithGoogle": "Continue with Google",
     "alreadyHaveAccount": "Already have an account?",
-    "login": "Log in"
+    "login": "Log in",
+    "nameMinLength": "Name must be at least 2 characters",
+    "invalidEmail": "Invalid email",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordsDoNotMatch": "Passwords do not match"
   },
   "ForgotPassword": {
     "title": "Recover password",
@@ -53,7 +57,8 @@
     "emailPlaceholder": "you@email.com",
     "submit": "Send instructions",
     "rememberedPassword": "Remembered your password?",
-    "backToLogin": "Back to login"
+    "backToLogin": "Back to login",
+    "invalidEmail": "Invalid email"
   },
   "Landing": {
     "nav": {
